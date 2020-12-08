@@ -112,6 +112,7 @@ public class DefaultAdvisorChainFactory implements AdvisorChainFactory, Serializ
 		return interceptorList;
 	}
 
+
 	/**
 	 * Determine whether the Advisors contain matching introductions.
 	 * 判断advisors是否符合配置要求
