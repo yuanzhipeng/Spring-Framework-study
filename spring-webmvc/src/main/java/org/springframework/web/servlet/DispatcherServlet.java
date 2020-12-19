@@ -481,7 +481,7 @@ public class DispatcherServlet extends FrameworkServlet {
 
 
 	/**
-	 * This implementation calls {@link #initStrategies}.
+	 * 这个实现调用{@link#initStrategies}.
 	 */
 	@Override
 	protected void onRefresh(ApplicationContext context) {
@@ -489,8 +489,8 @@ public class DispatcherServlet extends FrameworkServlet {
 	}
 
 	/**
-	 * Initialize the strategy objects that this servlet uses.
-	 * <p>May be overridden in subclasses in order to initialize further strategy objects.
+	 * 初始化这个servlet使用的策略对象.
+	 * <p>可以在子类中重写，以便初始化进一步的策略对象.
 	 */
 	protected void initStrategies(ApplicationContext context) {
 		initMultipartResolver(context);
@@ -505,9 +505,9 @@ public class DispatcherServlet extends FrameworkServlet {
 	}
 
 	/**
-	 * Initialize the MultipartResolver used by this class.
-	 * <p>If no bean is defined with the given name in the BeanFactory for this namespace,
-	 * no multipart handling is provided.
+	 * 初始化此类使用的MultipartResolver.
+	 * <p>如果在该命名空间的BeanFactory中没有使用给定名称定义bean,
+	 * 不提供多部分处理.
 	 */
 	private void initMultipartResolver(ApplicationContext context) {
 		try {
